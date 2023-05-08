@@ -1,4 +1,4 @@
-# Exercise - HTML / CSS & JS - GitFav
+# Exercise - HTML / CSS & JS - Class properties
 
 Exercise #2 from Week #6, named "GitFav". Part of the program "Explorer", from the online platform [Rocketseat](https://rocketseat.com.br/).
 
