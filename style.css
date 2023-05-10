@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+
+
+/* ------------ body ----------------------------------------------------------------------------------------------------- */
+body {
+  background: hsl(240, 20%, 3%);
+}
+
+body * {
+  font-family: 'Roboto';
+  color: #FFFFFF;
+}
+
+header {
+  margin: 11.5rem 16rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29.4rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+#username-text {
+  background: #0e222a;
+  color: #66adbd;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 100%;
+
+  height: 5rem;
+  width: 46.5rem;
+  padding: 1.7rem;
+
+  border: none;
+  border-radius: 0.6rem;
+}
+
+#username-text::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7C7C8A;
+  opacity: 1; /* Firefox */
+}
+
+#username-text:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #7C7C8A;
+}
+
+#username-text::-ms-input-placeholder { /* Microsoft Edge */
+  color: #7C7C8A;
+}
+
+#username-text:focus {
+  outline: 1px solid #66adbd;
+    /* "input text" outline focus color */
+}
+
+#fav-btn {
+  background: #065E7C;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  height: 5rem;
+  width: 17rem;
+  padding: 1.4rem 3.2rem 1.4rem;
+
+  display: flex;
+  gap: 0.8rem;
+
+  border: none;
+  border-radius: 0.6rem;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out ;
+}
+
+#fav-btn:hover {
+  background: #FFFFFF;
+  color: #065E7C;
+}
+
+#fav-btn:hover #star path {
+  fill: #065E7C;
+}
+
+#remove-btn {
+  background: none;
+  border: none;
+
+  color: #F75A68;
+  font-weight: 700;
+  font-size: 2rem;
+  
+  display: flex;
+  align-items: center;
+  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out ;
+}
+
+#remove-btn:hover {
+  color: #ff0000;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+
+/* ------------ Table ----------------------------------------------------------------------------------------------------- */
+table {
+  background: #092D38;
+  text-align: left;
+  margin: 9rem 16rem 12rem;
+  width: 100%;
+  max-width: 120rem;
+
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  outline: 1px solid #66adbd;
+}
+
+th {
+  color: #66adbd;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+td {
+  color: #E1E1E6;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+p {
+  color: #E1E1E6;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+td.user span {
+  color: #E1E1E6;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+table th {
+  padding: 1.6rem 0 1.6rem 4rem;
+}
+
+table th:first-child {
+  width: 45rem;
+}
+
+table th:nth-child(n+2) {
+  width: 19rem;
+}
+
+table th:last-child {
+  width: 15rem;
+}
+
+table td {
+  padding: 2.4rem 0 2.4rem 4rem;
+}
+
+table td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: hsla(195, 61%, 6%, 1);
+}
+
+tbody tr:nth-child(even) {
+  background: hsla(195, 61%, 6%, 0.5);
+}
+
+.no-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 35vh;
+  width: 210%;
+}
+
+.no-user img {
+  width: clamp(8rem, 8rem + 10vw, 10rem);
+  height: auto;
+}
+
+.no-user span {
+  padding-top: 1rem;
+  padding-left: 2rem;
+
+  color: #4E5455;
+  font-weight: 700;
+  font-size: 4rem;
+}
