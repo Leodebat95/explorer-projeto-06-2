@@ -1,4 +1,4 @@
-# Exercício - HTML / CSS & JS - Propriedades das Classes
+# Exercício - HTML / CSS & JS - Propriedades das Classesu
 
 Exercício #2 da semana #6, de nome "GitFav". Parte do curso "Explorer", da plataforma de ensino [Rocketseat](https://rocketseat.com.br/).
 
